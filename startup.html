@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Our new Sneakers</title>
+        <link rel="stylesheet" href="startup.css">
+        <script type="text/javascript" src="startup.js"></script>
+    </head>
+    <body>
+        <div class = "hamburger" onclick="toggleMenu()">
+            <div class = "line" id = "top"></div>
+            <div class = "line" id = "middle"></div>
+            <div class = "line" id = "bottom"></div>
+        </div>
+        <div class ="menu--off">
+            <div class="tab">
+                <p class="tab-text">About Us</p>
+            </div>
+                      <div class="tab">
+                <p class="tab-text">About Us</p>
+            </div>
+                      <div class="tab">
+                <p class="tab-text">About Us</p>
+            </div>
+        </div>
+        <div class="product">
+            <h1>The new Travis Scott x Fragment x Air Jordan 1 High OG are here!</h1>
+            <img class ="pic" id="pic1" src="sneakers.jpg">
+            <img class = "pic" id ="pic2" src ="sneakers2.jpg.jpg">
+            <div class ="arrow" id="left" onclick="prevPhoto();createRipple(event)">
+                <img class ="arrow-img" src ="left.png" id = "left-pic" alt="">
+            </div>
+            <div class ="arrow" id ="right" onclick="nextPhoto();createRipple(event)">
+                <img class = "arrow-img" src="right.png" id = "right-pic" alt="">
+            </div>
+        </div>
+        <div class ="stockx">
+            <div class ="price" id="id1" onclick="createRipple(event)">
+                <p>Lowest ask <br>300$</p>
+            </div>
+            <div class ="price" id="id2" onclick="add100();createRipple(event)"> 
+                <p>Highest bid <br>500$</p>
+                <span class="ripple"></span>
+            </div>
+        </div>
+        <h1 style="position: absolute;top: 10px; right:10px;">According to StockX:</h1>
+        <p class="content">The Jordan 1 Travis Scott has been awaited with much enthusisasm by sneakerheads
+            <br/> but the wait is  finally over. The sneaker is a tribute to the rare Fragment model from 2014 <br/> and 
+            adds the Travis Scott reversed logo  and leather design.   
+        </p>
+    </body>
+</html> 
